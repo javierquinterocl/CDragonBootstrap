@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333030;
+}
+
+
+.sidebar{
+    backdrop-filter: blur(5px);
+}
+.dropdown-menu{
+    color: black;
+}
+.btn-outline-success{
+    color: aliceblue;
+}
+.btn-outline-success:hover{
+    background-color: aliceblue;
+    color: #000000;
+}
+
+
+.dropdown-menu{
+    zindex-dropdown:1000;
+    z-index: 100;
+}
+.dropdown-item{
+    color: #fffefe;
+    z-index: 100;
+}
+.dropdown-item a:hover{
+    color: rgb(0, 0, 0);
+}
+.espaciador{
+    display: initial;
+    flex-wrap: wrap;
+   
+}
+.espaciador  p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: calc(2vh + .1em);
+    background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+    transition: all ease-in-out 0.5s;
+    color: #ffffff;
+    padding: 5px 0;
+    border-top: #ffffff96 2px solid;
+}
+.espaciador p:hover{
+    text-decoration:underline;
+    cursor: pointer;
+    background-position: right center;
+    background-size: 200% auto;
+    
+}
+.espaciador h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: calc(4vh + .1em);
+    padding: 5px;
+    color: #fff;
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%,  rgba(7,7,9,1) 93.2% );
+    border-top: #ffffff77 1px solid;
+    border-bottom: #ffffffa1 1px solid;
+    
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+.display-4{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.position-relative{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+@media (max-width:576px){
+
+    .espaciador p{
+        font-size: calc(1vh + .1em);
+    }
+    .espaciador h1{
+        font-size: calc(3vh + .1em);
+    }
+    /* ----CARRUSEL MEDIA QUERY*/
+    .carousel img{
+        height: 250px;
+        width: 100%;
+
+    }
+}
