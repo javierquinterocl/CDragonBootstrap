@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import "transition-style";
 
 *{
     box-sizing: border-box;
@@ -41,6 +42,27 @@ body{
 }
 #boton:hover{
     color: #fff;
+}
+.shadow-sm{
+    background-color: #fffefe;
+    z-index: 100;
+}
+.shadow-sm:hover{
+    background-color: #ff4646f8;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .2s;
+   
+
+}
+
+
+#imagenprueba::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    background-color: #ff4646;
+    z-index: 100;
+
 }
 .dropdown-menu{
    
@@ -91,7 +113,7 @@ body{
     margin-bottom: 0;
     font-weight: 700;
     font-size: 1.9rem;
-    padding: 5px 0 5px 2px;
+    padding: 10px 0 10px 2px;
     margin-left: 2px;
     gap: 8px;
     color: #fff;
@@ -156,6 +178,26 @@ footer img{
 .contenidofooter li{
     border-top: #fffcfc52 0.5px solid;
 
+}
+.col{
+    background-color: #0a0a0a;
+}
+.shadow-sm{
+    
+    color: #000000;
+    font-weight: 600;
+}
+.btn-group a{
+    background-color: #ff4646;
+    color: #fcfcfc;
+    border: none;
+    border-radius: 20px;
+}
+.btn-group a:hover{
+    background-position: right center;
+    background-color: #b3b3b3;
+    background-size: 200% auto;
+    color: #000000;
 }
 
 
